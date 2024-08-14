@@ -1,3 +1,185 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de página</title>
+    <style>
+    header{
+        background-color: aquamarine;
+        text-align: center;
+    }
+
+    nav{
+        border: 2px solid black;
+        background-color: lightgreen;
+    }
     
+    main{
+        border:2px solid black;
+        padding: 4px;
+    }
+
+    section{
+        border: 1px solid grey;
+        padding: 2px;
+        background-color: beige;
+    }
+
+    footer{
+        border: 4px solid black;
+        background-color: antiquewhite;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    table{
+        width:30%;
+        border:1px solid black;
+        }
+        th, td{
+            border:1px solid black;
+            padding:2px;
+            text-align:left;}
+        tfoot{
+            font-weight: bold;
+            background-color: grey;
+        }</style>
+</head>
+<body>
+    <header>
+        <h1>Encabezado de página</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Parte1">Estructura</a></li>
+            <li><a href="#Multimedia">Multimedia</a></li>
+            <li><a href="#Formulario">Formulario</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+        <h1 id="Parte1">1. Estructura básica del documento HTML </h1>
+        <p>Este documento HTML tiene una estructura básica que incluye la declaración DOCTYPE, etiquetas de metadatos y un título.</p>
+        <h1 id="Parte2">2. Encabezados y propiedades del texto</h1>
+        <h2>Este texto es un encabezado h2</h2>
+        <h3><i>Este texto es un encabezado h3 en cursiva</i></h3>
+        <h4><u>Este texto es un encabezado h4 subrayado</u></h4>
+        <h5>Este texto es un encabezado h5</h5>
+        <h6>Este texto es un encabezado h6</h6>
+        <article>
+            <p>Este texto es parte de un párrafo en un artículo. <b>Este texto está en negritas.</b></p>
+        </article>
+        </section>
+        <section>
+            <h1>3. Divisiones y Agrupación de Contenido</h1>
+        <!-- Comentario -->
+        <div>
+            <h3>Sección 1</h3>
+            <p>Contenido de la primera sección agrupada en un div.</p>
+        </div>
+        <div>
+            <h3>Sección 2</h3>
+            <p>Contenido de la segunda sección agrupada en un div.</p>
+        </div>
+        </section>
+        <section>
+            <h1>4. Enlaces y listas</h1>
+        <p>Visita nuestro <a href="https://es.wikipedia.org/wiki/Ailuropoda_melanoleuca", target="_blank">sitio web</a> para más información.</p>
+        <div>
+            <p>Enlaces internos:</p>
+            <ul>
+                <li><a href="#Parte1">Estructura básica</a></li>
+                <li><a href="#Parte2">Encabezados y propiedades del texto</a></li>
+            </ul>
+        </div>
+    
+        <div>
+            Lista ordenada:
+            <ol>
+                <li>Primer item</li>
+                <li>Segundo item</li>
+            </ol>
+        </div>
+    
+        <div>
+            Lista desordenada:
+            <ul>
+                <li>Item de la lista</li>
+                <li>Otro item de la lista</li>
+            </ul>
+        </div>
+    
+        </section>
+        <section>
+            <div>
+                <h1 id="Multimedia">5. Elementos Multimedia</h1>
+                <img src="https://static.nationalgeographicla.com/files/styles/image_3200/public/dp130155.webp?w=1280&h=720" 
+                alt="Esta es una imagen" width="350px" height="250px">
+        
+                <video src="https://v.ftcdn.net/09/01/76/55/700_F_901765594_vHDPI11itKjtsr00y2snFPkyvFpgMeD3_ST.mp4" alt="Esto es un video"
+                width="400px" height="275px" controls>
+        
+                <audio src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b1/What_shall_we_do_with_the_drunken_sailor.mid/What_shall_we_do_with_the_drunken_sailor.mid.mp3" 
+                controls autoplay >
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>6. Tablas</h1>
+        
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Columna 1</th>
+                            <th>Columna 2</th>
+                            <th>Columna 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                            <td>Dato 3</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Dato 4</td>
+                            <td>Dato 5</td>
+                            <td>Dato 6</td>
+                        </tr>
+                    </tbody>
+        
+                    <tfoot>
+                        <tr>
+                            <td>Total 1</td>
+                            <td>Total 2</td>
+                            <td>Total 3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1 id="Formulario">7. Formularios</h1>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" />
+
+                    <label>Correo electrónico:</label>
+                    <input type="email" placeholder="example@otherexample.com" />
+        
+                    <label>Mensaje</label>
+                    <textarea placeholder="Ingrese sus comentarios aquí"></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <em>Creado por Maximiliano Niscola</em>
+</footer>
 </html>
