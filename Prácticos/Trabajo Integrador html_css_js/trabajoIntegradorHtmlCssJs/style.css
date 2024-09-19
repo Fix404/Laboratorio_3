@@ -9,14 +9,14 @@
 .container__principalHeader{
   width:100vw;
   height:8vh;
-  background-color: rgb(241, 121, 7);
+  background-color: rgb(255, 138, 8);
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .container__contentHeader{
-  width:70%;
+  width:67%;
   display:flex;
   justify-content: space-between;
   padding: 0.4rem;
@@ -34,18 +34,19 @@
   border: none;
   padding:0.4rem;
   outline: none;
-  font-size: 1.7vh;
+  font-size: 1.9vh;
   width:20vw;
   height:2.6vh;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);;
 }
 
 .buttonSearch{
   border:1px solid black;
   background-color: transparent;
   border-radius: 0.4rem;
-  padding:0.4rem;
-  width:10vw;
-  height: 5vh;
+  padding:0.2rem;
+  width:7vw;
+  height: 4.9vh;
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -54,17 +55,17 @@
 .buttonSearch:hover{
   cursor:pointer;
   background-color: rgb(252, 167, 88);
-  transition: .2s ease;
+  transition: .25s ease;
 }
 
 .header__addElementButton{
   border:1px solid black;
   background-color: transparent;
   border-radius: 0.4rem;
-  padding:0.4rem;
-  width:10vw;
+  padding:0.2rem;
+  width:8.5vw;
   font-size: 1.9vh;
-  height: 5vh;
+  height: 4.9vh;
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -73,32 +74,33 @@
 .header__addElementButton:hover {
   cursor:pointer;
   background-color: rgb(252, 167, 88);
-  transition: .2s ease;
+  transition: .25s ease;
 }
 
 /* ------- Main ------- */
 .main__containerView{
   display:grid;
-  grid-template-columns: 0.2fr 0.8fr;
+  grid-template-columns: 0.17fr 0.83fr;
 }
 
 .listAside{
-  background-color: orangered;
+  background-color: rgb(255, 193, 0);
   height: 92vh;
 
 }
 
 /* STORE */
 .store{
-  background-color: rgb(208, 7, 7);
+  background-color: rgb(196, 12, 12);
   max-height: 92vh;
   overflow-y: auto;
   width:100%;
 }
 
 .sectionStore{
-  background-color: white;
+  background-color: whitesmoke;
   margin:1rem;
+  border-radius: 0.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,9 +109,9 @@
 }
 
 .containerTitleSection{
-  margin:1rem;
-  font-size: 3vh;
-  border-bottom: 1px solid grey;
+  margin:0.68rem;
+  font-size: 4vh;
+  border-bottom: 2px solid grey;
 }
 
 .containerProductStore{
@@ -128,20 +130,21 @@
   align-items: center;
   flex-direction: column;
   padding:1.4rem;
-  box-shadow: 2px 2px 5px 4px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.25);
   border-radius: .4rem;
 }
 
 .containerTargetItem:hover{
   cursor:pointer;
   transform: scale(1.08);
-  transition: .2s ease;
+  transition: .23s ease;
 }
 
 
 .containerTargetItem h2{
-  font-size: 2.8vh;
+  font-size: 2.9vh;
   text-align: center;
+  padding: 0.4rem;;
 }
 
 .targetProps {
@@ -149,6 +152,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  font-size: 2.6vh;
   width: 100%;
 }
 
@@ -156,12 +160,13 @@
   width: 160px;
   height: 140px;
   border-radius: .4rem;
-  box-shadow: 2px 2px 5px 4px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.3);
 }
 
 /* Elementos del listAside */
 .listAside{
   display: flex;
+  align-content: space-between;
   align-items: center;
   flex-direction: column;
 }
@@ -172,28 +177,30 @@
   font-size: 3vh;
   justify-content: center;
   align-items: center;
+  padding:0.4rem;
 }
 
 .listAside ul{
-  margin-top: 3vh;
+  margin-top: 4vh;
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   gap:1vh;
 }
 
 .listAside ul li{
-  font-size: 2vh;
-  font-weight: 600;
+  font-size: 2.25vh;
+  font-weight: 700;
   padding: 0.3rem;
   border-radius: 0.4rem;
 }
 
 .listAside ul li:hover{
   cursor: pointer;
-  background-color: grey;
+  background-color: rgb(255, 138, 8);
+  border: 0.7px solid black;
 }
 
 .liActive{
@@ -212,15 +219,15 @@
   display: none;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
 
 }
 
 .popUpContainer{
-  width:60vw;
-  height: 50vh;
+  width:40vw;
+  height: 70vh;
   background-color: whitesmoke;
-  box-shadow: 5px 2px 10px 10px rgba(0,0,0,0.4);
+  box-shadow: 5px 2px 7px 7px rgba(0,0,0,0.4);
   border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
@@ -240,9 +247,15 @@
   gap:2vh;
 }
 
-.containerInputs__Popup input,
+.containerInputs__Popup input{
+  width:60%;
+  border:1px solid grey;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
 .containerInputs__Popup select{
-  width:55%;
+  width:60%;
   border:1px solid grey;
   padding: 0.4rem;
   border-radius: 0.4rem;
@@ -251,8 +264,7 @@
 .containerButtons__Popup{
   width:100%;
   display: flex;
-  justify-content: space-around;
-
+  justify-content:space-evenly;
 }
 
 .buttonPopup{
@@ -260,18 +272,31 @@
   border: none;
   border-radius: 0.4rem;
   font-size: 2vh;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
 }
 
 .cancel{
   background-color: grey;
 }
 
+.cancel:hover{
+  cursor: pointer;
+}
+
 .accept{
-  background-color: green;
+  background-color: rgb(122, 243, 10);
+}
+
+.accept:hover{
+  cursor: pointer;
 }
 
 .delete{
-  background-color: red;
+  background-color: rgba(235, 12, 12, 0.943);
+}
+
+.delete:hover{
+  cursor: pointer;
 }
 
 /* Media-Queries */
@@ -289,7 +314,7 @@
 /* Scrollbar */
 
 ::-webkit-scrollbar{
-  width: 0.7rem;
+  width: 0.6rem;
   background-color: white;
   border-radius: 0.4rem;
 }
@@ -297,10 +322,11 @@
 ::-webkit-scrollbar-thumb{
   background-color: rgb(241, 121, 7);
   border-radius: 0.4rem;
+  border: 1px solid black;
 }
 
 ::-webkit-scrollbar-thumb:hover{
   background-color: rgb(255, 185, 120);
   border-radius: 0.4rem;
-  transition: 0.3s ease;
+  transition: 0.9s ease-in;
 }
