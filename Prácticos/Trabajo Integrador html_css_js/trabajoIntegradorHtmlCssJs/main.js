@@ -1,67 +1,30 @@
-import { setInLocalStorage } from "./src/persistence/localStorage";
 import { renderCategories } from "./src/services/categories";
+import { handleSearchProductByName } from "./src/services/searchBar";
+import { handleGetProductsToStore } from "./src/views/store";
 import "./style.css";
+
+// Aplicación
+export let categoriaActiva=null;
+
+export const setCategoriaActiva= (categoriaIn) => {
+  categoriaActiva=categoriaIn;
+}
+
+export let productoActivo=null;
+
+export const setProductoActivo= (productoIn) => {
+  productoActivo=productoIn;
+}
+
+handleGetProductsToStore();
 
 // Categorías
 renderCategories();
 //
 
-// Productos
-const buttonAdd=document.getElementById("addElementButton");
+// Botón buscar:
 
-buttonAdd.addEventListener("click", () => {
-  openModal();
-});
-//
-
-// Popup
-
-const buttonCancel=document.getElementById("cancelButton");
-buttonCancel.addEventListener("click", () => {
-  handleCancelButton();
-});
-
-const handleCancelButton= () => {
-  closeModal();
-}
-
-const openModal= () => {
-  const modal=document.getElementById("modalPopup");
-  modal.style.display="flex";
-
-};
-
-const closeModal= () => {
-  const modal=document.getElementById("modalPopup");
-  modal.style.display="none";
-
-};
-
-//
-
-// Guardar valores
-
-const acceptButton=document.getElementById("acceptButton");
-acceptButton.addEventListener("click", () => {
-  handleSaveModifElement();
-});
-
-const handleSaveModifElement= () => {
-  const nombre=document.getElementById("name").value,
-  imagen=document.getElementById("img").value,
-  precio=document.getElementById("price").value,
-  categoria=document.getElementById("categoria").value;
-
-  let object={
-    id:new Date().toISOString(),
-    nombre,
-    imagen,
-    precio,
-    categoria
-  }
-
-  setInLocalStorage(object);
-
-  //closeModal();
-};
-
+const buttonSearch=document.getElementById("buttonSearch");
+buttonSearch.addEventListener("click", () => {
+  handleSearchProductByName();
+})

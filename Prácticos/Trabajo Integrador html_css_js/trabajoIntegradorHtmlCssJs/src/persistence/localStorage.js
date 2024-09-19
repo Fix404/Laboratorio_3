@@ -9,16 +9,16 @@ export const handleGetProductLocalStorage= () => {
 };
 
 export const setInLocalStorage= (productIn) => {
-    let productsInLocal=handleGetProductLocalStorage();
-
+    if(productIn){
+        let productsInLocal=handleGetProductLocalStorage();
+        console.log(productIn);
     const existingIndex=productsInLocal.findIndex((productLocal) =>
         productLocal.id===productIn.id);
-
     if(existingIndex !== -1){
         productsInLocal[existingIndex]=productIn;
     }else{
         productsInLocal.push(productIn);
     }
-
     localStorage.setItem("products", JSON.stringify(productsInLocal));
+    }
 }
