@@ -1,5 +1,6 @@
 // Siempre la App devuelve un solo elemento (un div, un p, etc).
 
+import { Appproduct } from "./components/AppProduct/Appproduct"
 import { ComponentUseEffect } from "./components/ComponentUseEffect/ComponentUseEffect"
 import { FormComponent } from "./components/FormComponent/FormComponent"
 import { ComponentCounter } from "./components/MyComponentCounter/ComponentCounter"
@@ -13,12 +14,13 @@ export const App = () => {
             {/* <PrimerComponente text={"Hola Mundo de nuevo"} color="green" fontSize={1.5}/>
             <ComponentCounter />
             <ComponentUseEffect /> */}
-            <FormComponent />
+            {/* <FormComponent /> */}
 
             {/* {enableCounter && <ComponentCounter />}
             <button onClick={() =>{
                 setEnableCounter(!enableCounter);
             }}>Mostrar u ocultar contador</button> */}
+            <Appproduct/>
         </div>
     )
 }
