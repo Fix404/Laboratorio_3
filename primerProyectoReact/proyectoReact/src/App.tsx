@@ -1,10 +1,6 @@
 // Siempre la App devuelve un solo elemento (un div, un p, etc).
 
 import { Appproduct } from "./components/AppProduct/Appproduct"
-import { ComponentUseEffect } from "./components/ComponentUseEffect/ComponentUseEffect"
-import { FormComponent } from "./components/FormComponent/FormComponent"
-import { ComponentCounter } from "./components/MyComponentCounter/ComponentCounter"
-import { PrimerComponente } from "./components/MyFirstComponent/PrimerComponente"
 
 export const App = () => {
     {/*const [enableCounter, setEnableCounter]=useState(false);*/}
